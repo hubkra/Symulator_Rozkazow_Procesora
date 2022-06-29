@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Strona do nauki</title>
+		
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	
+	
+	
+</head>
+
+<body>
+
+
+
+<div id="content">
+<div class="napis">
+    <p>Symulator rozkazów procesora INTEL 8086</p>
+</div>
+<!-- KOLUMNY -->
+<div class="center">
+    
+    
+    <div class="firstColumn1"> <span id="hexCode2"></span></div>
+    <div class="firstColumn2"> <span id="hexCode3"></span></div> 
+    <div class="firstColumn3"> <span id="hexCode4"></span></div>
+    <div class="firstColumn4"> <span id="hexCode5"></span></div>
+
+
+</div>
+<div class="center">
+
+<div class="secondColumn1"> <textarea maxlength="2" id="txt1"></textarea></div>
+<div class="secondColumn2"> <textarea maxlength="2" id="txt2"></textarea></div>     
+<div class="secondColumn3"><textarea maxlength="2" id="txt3"></textarea></div>
+<div class="secondColumn4"> <textarea maxlength="2" id="txt4"></textarea></div> 
+</div>
+
+<div class="center">
+
+<div class="threeColumn1"><textarea maxlength="2" id="txt5"></textarea> </div>
+<div class="threeColumn2"> <textarea maxlength="2" id="txt6"></textarea> </div>  
+<div class="threeColumn3"> <textarea maxlength="2" id="txt7"></textarea> </div>
+<div class="threeColumn4"> <textarea maxlength="2" id="txt8"></textarea></div>
+
+</div> 
+
+
+
+<!-- PRZYCISKI-->
+<div class="center">
+
+    <button id="bt1" onclick="MOV()">MOV</button>
+    <button id="bt2" onclick="random()">RANDOM</button>
+    <button id="bt3" onclick="reset()">ZEROWANIE</button>
+    <button id="bt4" onclick="XCHG()">XCHG</button>
+</div>
+
+
+<!-- DOL STRONY -->
+<!-- PIERWSZA KOLUMNA-->
+
+<div class="bottom">
+    <label class="container">AX
+        <input type="radio"  name="radio" id="je">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">BX
+        <input type="radio" name="radio" id="dw">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">CX
+        <input type="radio" name="radio" id="tr">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">DX
+        <input type="radio" name="radio" id="cz">
+        <span class="checkmark"></span>
+      </label>
+</div>
+
+<div class="bottom">
+    <label class="container">AX
+        <input type="radio"  name="radio2" id="pi">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">BX
+        <input type="radio" name="radio2" id="sz">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">CX
+        <input type="radio" name="radio2" id="si">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">DX
+        <input type="radio" name="radio2" id="os">
+        <span class="checkmark"></span>
+      </label>
+</div>
+
+
+<!-- DRUGA KOLUMNA-->
+
+
+<div class="bottom">
+  <label class="container">AH
+    <input type="radio"  name="radio3" id="a1">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">BH
+    <input type="radio" name="radio3" id="a2">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">CH
+    <input type="radio" name="radio3" id="a3">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">DH
+    <input type="radio" name="radio3" id="a4">
+    <span class="checkmark"></span>
+  </label>
+</div>
+<div class="bottom">
+  <label class="container">AH
+    <input type="radio"  name="radio4" id="a5">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">BH
+    <input type="radio" name="radio4" id="a6">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">CH
+    <input type="radio" name="radio4" id="a7">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">DH
+    <input type="radio" name="radio4" id="a8">
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+
+
+<!-- TRZECIA KOLUMNA -->
+
+
+<div class="bottom">
+  <label class="container">AL
+    <input type="radio"  name="radio5" id="b1">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">BL
+    <input type="radio" name="radio5" id="b2">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">CL
+    <input type="radio" name="radio5" id="b3">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">DL
+    <input type="radio" name="radio5" id="b4">
+    <span class="checkmark"></span>
+  </label>
+</div>
+<div class="bottom">
+  <label class="container">AL
+    <input type="radio"  name="radio6" id="b5">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">BL
+    <input type="radio" name="radio6" id="b6">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">CL
+    <input type="radio" name="radio6" id="b7">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">DL
+    <input type="radio" name="radio6" id="b8">
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+
+</div>
+
+
+
+<script src="skrypt.js"></script>
+
+
+
+
+</body>
+</html>

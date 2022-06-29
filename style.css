@@ -1,0 +1,269 @@
+body
+{
+    margin:0;
+    padding: 0;
+    background-color: black;
+}
+
+#content
+{
+    width: 1100px;
+    height: 850px;
+    background-color: rgb(126, 226, 151);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.napis
+{
+    height: 100px;
+}
+.napis p
+{
+    text-align: center;
+    padding: 1%;
+    font-size: 28px;
+    color:blue;
+    text-shadow: black 2px;
+}
+
+.center
+{
+    width:250px;
+    height: 350px;
+    float:left;
+    font-size: 30px;
+}
+
+/* PIERWSZA KOLUMNA */
+
+.firstColumn1,.firstColumn2,.firstColumn3,.firstColumn4{
+    background-color: grey;
+    width: 180px;
+    height: 50px;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+.firstColumn1::after
+{
+    content: 'AX';
+   display:block;
+   margin-left: -50px;
+}
+
+.firstColumn2::after
+{
+    content: 'BX';
+   display:block;
+   margin-left: -50px;
+}
+
+.firstColumn3::after
+{
+    content: 'CX';
+   display:block;
+   margin-left: -50px;
+}
+
+.firstColumn4::after
+{
+    content: 'DX';
+   display:block;
+   margin-left: -50px;
+}
+
+
+.b1, .b2 , .b3, .b4
+{
+    height: 28px;
+    width: 150px;
+    
+}
+
+/* DRUGA KOLUMNA */
+
+.secondColumn1,.secondColumn2,.secondColumn3,.secondColumn4,.threeColumn1,
+.threeColumn2,
+.threeColumn3,
+.threeColumn4
+{
+    position: relative;
+    border: black solid 2px;
+    width: 90px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+.secondColumn1::after
+{
+    content: 'AH';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.secondColumn2::after
+{
+    content: 'BH';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.secondColumn3::after
+{
+    content: 'CH';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.secondColumn4::after
+{
+    content: 'DH';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+
+/* TRZECIA KOLUMNA */
+
+
+.threeColumn1::after
+{
+    content: 'AL';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.threeColumn2::after
+{
+    content: 'BL';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.threeColumn3::after
+{
+    content: 'CL';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+.threeColumn4::after
+{
+    content: 'DL';
+   display:block;
+   margin-left: -50px;
+   margin-top: -55px;
+}
+
+
+/* TEXT AREA */
+#txt1,#txt2,#txt3,#txt4,#txt5,#txt6,#txt7,#txt8
+{
+   background: none;
+   border: none;
+   resize: none;
+   width: 90px;
+    height: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+
+/*CZWARTA KOLUMNA*/
+
+
+
+span {
+    position: absolute;
+    width:180px;
+    height: 50px;
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  #bt2,#bt3,#bt1,#bt4
+  {
+    margin-top: 27px;
+    width:200px;
+    height: 55px;
+}
+
+/* BOOT */
+.bottom
+{
+  
+    width:150px;
+    height: 350px;
+    float:left;
+    font-size: 30px;
+}
+
+/* label */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Ukrycie przycisku radio z przegladarki  */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Customowy przycisk*/
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* cien */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Checked */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+
+  /* Kropeczka */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
